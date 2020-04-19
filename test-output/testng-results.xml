@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="8" total="14" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="129710" started-at="2020-04-19T14:49:26 IST" finished-at="2020-04-19T14:51:35 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="126142" started-at="2020-04-19T14:49:26 IST" finished-at="2020-04-19T14:51:32 IST">
+      <class name="regressionscripts.manuallyfailinginvalid">
+        <test-method status="PASS" signature="openApp(java.lang.String)[pri:0, instance:regressionscripts.manuallyfailinginvalid@52f759d7]" name="openApp" is-config="true" duration-ms="12762" started-at="2020-04-19T14:49:26 IST" finished-at="2020-04-19T14:49:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="Login()[pri:0, instance:regressionscripts.manuallyfailinginvalid@52f759d7]" name="Login" duration-ms="38300" started-at="2020-04-19T14:49:38 IST" finished-at="2020-04-19T14:50:17 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.fail(Assert.java:102)
+at regressionscripts.manuallyfailinginvalid.Login(manuallyfailinginvalid.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:regressionscripts.manuallyfailinginvalid@52f759d7]" name="closeApp" is-config="true" duration-ms="2572" started-at="2020-04-19T14:50:17 IST" finished-at="2020-04-19T14:50:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=FAILURE method=manuallyfailinginvalid.Login()[pri:0, instance:regressionscripts.manuallyfailinginvalid@52f759d7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- regressionscripts.manuallyfailinginvalid -->
+      <class name="regressionscripts.Valid">
+        <test-method status="PASS" signature="openApp(java.lang.String)[pri:0, instance:regressionscripts.Valid@7cbd213e]" name="openApp" is-config="true" duration-ms="12993" started-at="2020-04-19T14:50:19 IST" finished-at="2020-04-19T14:50:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:regressionscripts.Valid@7cbd213e]" name="Login" duration-ms="21561" started-at="2020-04-19T14:50:32 IST" finished-at="2020-04-19T14:50:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:regressionscripts.Valid@7cbd213e]" name="closeApp" is-config="true" duration-ms="1451" started-at="2020-04-19T14:50:54 IST" finished-at="2020-04-19T14:50:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Valid.Login()[pri:0, instance:regressionscripts.Valid@7cbd213e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- regressionscripts.Valid -->
+      <class name="regressionscripts.Invalid">
+        <test-method status="PASS" signature="openApp(java.lang.String)[pri:0, instance:regressionscripts.Invalid@192d3247]" name="openApp" is-config="true" duration-ms="10054" started-at="2020-04-19T14:50:55 IST" finished-at="2020-04-19T14:51:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:regressionscripts.Invalid@192d3247]" name="Login" duration-ms="24918" started-at="2020-04-19T14:51:05 IST" finished-at="2020-04-19T14:51:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:regressionscripts.Invalid@192d3247]" name="closeApp" is-config="true" duration-ms="1466" started-at="2020-04-19T14:51:30 IST" finished-at="2020-04-19T14:51:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Invalid.Login()[pri:0, instance:regressionscripts.Invalid@192d3247] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- regressionscripts.Invalid -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="129710" started-at="2020-04-19T14:49:26 IST" finished-at="2020-04-19T14:51:35 IST">
+      <class name="regressionscripts.manuallyfailinginvalid">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:regressionscripts.manuallyfailinginvalid@64485a47]" name="setUp" is-config="true" duration-ms="202" started-at="2020-04-19T14:49:25 IST" finished-at="2020-04-19T14:49:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openApp(java.lang.String)[pri:0, instance:regressionscripts.manuallyfailinginvalid@64485a47]" name="openApp" is-config="true" duration-ms="16156" started-at="2020-04-19T14:49:26 IST" finished-at="2020-04-19T14:49:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="FAIL" signature="Login()[pri:0, instance:regressionscripts.manuallyfailinginvalid@64485a47]" name="Login" duration-ms="34665" started-at="2020-04-19T14:49:42 IST" finished-at="2020-04-19T14:50:16 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.fail(Assert.java:102)
+at regressionscripts.manuallyfailinginvalid.Login(manuallyfailinginvalid.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:regressionscripts.manuallyfailinginvalid@64485a47]" name="closeApp" is-config="true" duration-ms="2818" started-at="2020-04-19T14:50:16 IST" finished-at="2020-04-19T14:50:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=FAILURE method=manuallyfailinginvalid.Login()[pri:0, instance:regressionscripts.manuallyfailinginvalid@64485a47] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:regressionscripts.manuallyfailinginvalid@64485a47]" name="tearDown" is-config="true" duration-ms="1413" started-at="2020-04-19T14:51:35 IST" finished-at="2020-04-19T14:51:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- regressionscripts.manuallyfailinginvalid -->
+      <class name="regressionscripts.Valid">
+        <test-method status="PASS" signature="openApp(java.lang.String)[pri:0, instance:regressionscripts.Valid@25bbf683]" name="openApp" is-config="true" duration-ms="13835" started-at="2020-04-19T14:50:19 IST" finished-at="2020-04-19T14:50:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:regressionscripts.Valid@25bbf683]" name="Login" duration-ms="19711" started-at="2020-04-19T14:50:33 IST" finished-at="2020-04-19T14:50:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:regressionscripts.Valid@25bbf683]" name="closeApp" is-config="true" duration-ms="1581" started-at="2020-04-19T14:50:53 IST" finished-at="2020-04-19T14:50:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Valid.Login()[pri:0, instance:regressionscripts.Valid@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- regressionscripts.Valid -->
+      <class name="regressionscripts.Invalid">
+        <test-method status="PASS" signature="openApp(java.lang.String)[pri:0, instance:regressionscripts.Invalid@6ec8211c]" name="openApp" is-config="true" duration-ms="13121" started-at="2020-04-19T14:50:54 IST" finished-at="2020-04-19T14:51:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:regressionscripts.Invalid@6ec8211c]" name="Login" duration-ms="26634" started-at="2020-04-19T14:51:07 IST" finished-at="2020-04-19T14:51:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:regressionscripts.Invalid@6ec8211c]" name="closeApp" is-config="true" duration-ms="1137" started-at="2020-04-19T14:51:34 IST" finished-at="2020-04-19T14:51:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=Invalid.Login()[pri:0, instance:regressionscripts.Invalid@6ec8211c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- regressionscripts.Invalid -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
