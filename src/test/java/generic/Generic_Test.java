@@ -66,7 +66,7 @@ Logger log=Logger.getLogger(Generic_Test.class);
 	public void closeApp(ITestResult res) throws IOException//ITestResult is an listener interface(doubt y it is interface)
 	{
 		System.out.println(res.getStatus());//using variable res we use inbuit method getstatus as1 pass 2 fail 3 skip if 2 take SS
-		if(ITestResult.FAILURE==res.getStatus())
+		if(ITestResult.FAILURE==res.getStatus())//2 failure
 		{
 			String testName = res.getName();
 			test.fail("test script failed", MediaEntityBuilder.createScreenCaptureFromPath(new GenericSS().caputureimg(driver, testName)).build());//getname inbuilt method is used to the name of testcase that failed
@@ -78,10 +78,10 @@ Logger log=Logger.getLogger(Generic_Test.class);
 			
 			
 		}
-		else if(ITestResult.FAILURE==res.getStatus())
+		else if(ITestResult.SKIP==res.getStatus())
 		{
 			String testName = res.getName();
-			test.fail("test script skipped", MediaEntityBuilder.createScreenCaptureFromPath(new GenericSS().caputureimg(driver, testName)).build());//getname inbuilt method is used to the name of testcase that failed
+			test.skip("test script skipped", MediaEntityBuilder.createScreenCaptureFromPath(new GenericSS().caputureimg(driver, testName)).build());//getname inbuilt method is used to the name of testcase that failed
 			
 				//GenericSS.caputureimg(driver, testName);//classname.method name fron GenericSS since static directly we are accessing
 			

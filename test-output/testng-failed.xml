@@ -4,29 +4,24 @@
   <test thread-count="5" name="Test(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="regressionscripts.manuallyfailinginvalid">
+      <class name="regressionscripts.Invalid">
         <methods>
           <include name="openApp"/>
+          <include name="Login"/>
           <include name="setUp"/>
           <include name="closeApp"/>
-          <include name="Login"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- regressionscripts.manuallyfailinginvalid -->
+      </class> <!-- regressionscripts.Invalid -->
+      <class name="regressionscripts.Valid">
+        <methods>
+          <include name="openApp"/>
+          <include name="Login"/>
+          <include name="setUp"/>
+          <include name="closeApp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- regressionscripts.Valid -->
     </classes>
   </test> <!-- Test(failed) -->
-  <test thread-count="5" name="Test1(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="regressionscripts.manuallyfailinginvalid">
-        <methods>
-          <include name="openApp"/>
-          <include name="setUp"/>
-          <include name="closeApp"/>
-          <include name="Login"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- regressionscripts.manuallyfailinginvalid -->
-    </classes>
-  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

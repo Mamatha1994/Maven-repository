@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>D:\ECOMM\GIS\manuallingfailingtestng.xml</span>
+                    <span>D:\ECOMM\GIS\validinvalidtestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="regressionscripts.manuallyfailinginvalid" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="regressionscripts.manuallyfailinginvalid" hash-for-method="Login">Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,12 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="regressionscripts.Valid" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="regressionscripts.Invalid" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="regressionscripts.Invalid" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="regressionscripts.Valid" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -151,68 +132,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">regressionscripts.manuallyfailinginvalid</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at regressionscripts.manuallyfailinginvalid.Login(manuallyfailinginvalid.java:37)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                  <div class="stack-trace">java.lang.AssertionError: null
-	at regressionscripts.manuallyfailinginvalid.Login(manuallyfailinginvalid.java:37)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">regressionscripts.Valid</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,10 +154,32 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">regressionscripts.Valid</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\ECOMM\GIS\manuallingfailingtestng.xml</span>
+            <span class="header-content">D:\ECOMM\GIS\validinvalidtestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,15 +189,13 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regressionscripts.manuallyfailinginvalid&quot;/&gt;
       &lt;class name=&quot;regressionscripts.Valid&quot;/&gt;
       &lt;class name=&quot;regressionscripts.Invalid&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; parallel=&quot;tests&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regressionscripts.manuallyfailinginvalid&quot;/&gt;
       &lt;class name=&quot;regressionscripts.Valid&quot;/&gt;
       &lt;class name=&quot;regressionscripts.Invalid&quot;/&gt;
     &lt;/classes&gt;
@@ -272,10 +211,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
               <li>
-                <span class="test-name">Test1 (3 classes)</span>
+                <span class="test-name">Test1 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,36 +240,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'regressionscripts.manuallyfailinginvalid')
-data.setCell(0, 3, 38300);
+data.setCell(0, 2, 'regressionscripts.Invalid')
+data.setCell(0, 3, 14183);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Login')
-data.setCell(1, 2, 'regressionscripts.manuallyfailinginvalid')
-data.setCell(1, 3, 34665);
+data.setCell(1, 2, 'regressionscripts.Valid')
+data.setCell(1, 3, 7968);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Login')
-data.setCell(2, 2, 'regressionscripts.Invalid')
-data.setCell(2, 3, 26634);
+data.setCell(2, 2, 'regressionscripts.Valid')
+data.setCell(2, 3, 5021);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Login')
 data.setCell(3, 2, 'regressionscripts.Invalid')
-data.setCell(3, 3, 24918);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Login')
-data.setCell(4, 2, 'regressionscripts.Valid')
-data.setCell(4, 3, 21561);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Login')
-data.setCell(5, 2, 'regressionscripts.Valid')
-data.setCell(5, 3, 19711);
+data.setCell(3, 3, 4650);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -345,22 +276,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">regressionscripts.Valid</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">regressionscripts.Invalid</span>
               <div class="ignored-methods-div">
@@ -382,99 +300,74 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionscripts.manuallyfailinginvalid</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">regressionscripts.Valid</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">242 ms</span>
+                <span class="method-start">216 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">242 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Login</span>
-                <span class="method-start">13005 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Login</span>
-                <span class="method-start">16398 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=Login status=FAILURE method=manuallyfailinginvalid.Login()[pri:0, instance:regressi...)</span>
-                <span class="method-start">51074 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=Login status=FAILURE method=manuallyfailinginvalid.Login()[pri:0, instance:regressi...)</span>
-                <span class="method-start">51309 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">regressionscripts.Valid</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">53883 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">53893 ms</span>
+                <span class="method-name">openApp(firefox)</span>
+                <span class="method-start">216 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">66876 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Login</span>
-                <span class="method-start">67728 ms</span>
+                <span class="method-start">12086 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Valid.Login()[pri:0, instance:regressionscripts.Valid@2...)</span>
-                <span class="method-start">87442 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Valid.Login()[pri:0, instance:regressionscripts.Valid@7...)</span>
-                <span class="method-start">88442 ms</span>
+                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Valid.Login()[pri:0, instance:regressionscripts.Valid@4...)</span>
+                <span class="method-start">20061 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">regressionscripts.Invalid</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">89023 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">openApp(chrome)</span>
-                <span class="method-start">89895 ms</span>
+                <span class="method-start">21908 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">99949 ms</span>
+                <span class="method-start">32124 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">regressionscripts.Valid</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Login</span>
-                <span class="method-start">102144 ms</span>
+                <span class="method-start">34818 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Invalid.Login()[pri:0, instance:regressionscripts.Inval...)</span>
-                <span class="method-start">124879 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Invalid.Login()[pri:0, instance:regressionscripts.Inval...)</span>
-                <span class="method-start">128780 ms</span>
+                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Valid.Login()[pri:0, instance:regressionscripts.Valid@7...)</span>
+                <span class="method-start">39842 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">regressionscripts.manuallyfailinginvalid</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">regressionscripts.Invalid</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Invalid.Login()[pri:0, instance:regressionscripts.Inval...)</span>
+                <span class="method-start">46312 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(firefox)</span>
+                <span class="method-start">50717 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Login</span>
+                <span class="method-start">65398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=Login status=SUCCESS method=Invalid.Login()[pri:0, instance:regressionscripts.Inval...)</span>
+                <span class="method-start">70050 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">regressionscripts.Valid</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">129925 ms</span>
+                <span class="method-start">80731 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
